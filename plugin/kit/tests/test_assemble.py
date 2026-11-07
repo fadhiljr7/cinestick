@@ -46,7 +46,8 @@ class Assemble(unittest.TestCase):
 
     def test_token_match_uses_script_spelling(self):
         ws = A.line_words({'text': "I have 1000 IQ."}, [["I", 0, .1], ["have", .1, .2], ["a", .2, .3], ["thousand", .3, .5], ["IQ", .5, .7]], 0.0, 1.0)
-        self.assertEqual([w['word'] for w in ws], ["I", "have", "a", "thousand", "IQ"])
+        self.assertEqual([w['word'] for w in ws], ["I", "have", "1000", "IQ."])
+        self.assertEqual((ws[2]['start'], ws[2]['end']), (0.2, 0.5))   # "a thousand" merged into one caption word
         ws = A.line_words({'text': "Split! Split!"}, [["Split,", 0, .2], ["split.", .2, .4]], 0.0, 1.0)
         self.assertEqual([w['word'] for w in ws], ["Split!", "Split!"])
 

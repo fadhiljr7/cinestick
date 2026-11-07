@@ -37,9 +37,19 @@ def line_words(line: dict, asr: list, t0: float, dur: float) -> list:
     """Words of one line in global time. The script's spelling is shown only when it has as many tokens as Whisper heard;
     otherwise Whisper's own words are kept so caption text never drifts from its timing."""
     toks = line['text'].split()
-    same = len(toks) == len(asr)
-    return [{'word': toks[i] if same else w, 'start': round(t0 + max(0.0, a), 3), 'end': round(t0 + min(b, dur), 3), 'line': line.get('id')}
-            for i, (w, a, b) in enumerate(asr)]
+    mk = lambda w, a, b: {'word': w, 'start': round(t0 + max(0.0, a), 3), 'end': round(t0 + min(b, dur), 3), 'line': line.get('id')}
+    if len(toks) == len(asr):
+        return [mk(toks[i], a, b) for i, (_, a, b) in enumerate(asr)]
+    # Different counts: align. A script token with digits ("1000") that Whisper heard as several words ("a thousand")
+    # becomes one caption word spanning them; everything else keeps Whisper's words.
+    import difflib
+    norm = lambda s: re.sub(r"[^\w']", '', s.lower())
+    out = []
+    for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, [norm(t) for t in toks], [norm(w) for w, _, _ in asr], autojunk=False).get_opcodes():
+        if op == 'equal': out += [mk(toks[i1 + k], asr[j1 + k][1], asr[j1 + k][2]) for k in range(i2 - i1)]
+        elif op == 'replace' and i2 - i1 == 1 and re.search(r'\d', toks[i1]) and j2 > j1: out.append(mk(toks[i1], asr[j1][1], asr[j2 - 1][2]))
+        else: out += [mk(w, a, b) for w, a, b in asr[j1:j2]]
+    return out
 
 
 def _mono(path):
