@@ -7,11 +7,11 @@ NOTICE — third-party code in this folder
      render.mjs, player.html, package.json
      engine/      (core.js, styles.js, rig2d.js, fx2d.js, ui2d.js, three-kit.js, player.js)
      audio/       (dsp.py, sfx.py, music.py, mix.py)
-     tools/       doctor.py, verify_kit.py, new_project.py, common.py, beats.py, transcribe.py, parse_script.py
+     tools/       doctor.py, new_project.py, common.py, beats.py, transcribe.py, parse_script.py
    Changes made for cinestick:
      - engine/player.js: projects may replace the caption renderer (window.CAPTIONS hook)
      - render.mjs: PW_CHROMIUM environment variable selects an existing Chromium/headless-shell
-     - tools/new_project.py, tools/doctor.py, tools/verify_kit.py: cinestick defaults and checks
+     - tools/new_project.py, tools/doctor.py: cinestick defaults and checks (verify_kit.py removed)
 
 2. lemo-opuscar (MIT License, Copyright (c) 2026 LemoLab, github.com/lemomo-ai/lemo-opuscar)
    Files: tools/voice/tts.py, tools/voice/asr_check.py
