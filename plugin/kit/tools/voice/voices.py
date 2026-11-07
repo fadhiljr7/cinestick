@@ -45,6 +45,15 @@ def number_asr(text: str):
     return re.sub(r'\d[\d,]*(?:\.\d+)?', rep, text)
 
 
+ABBREV = {'Dr.': 'Doctor', 'Mr.': 'Mister', 'Mrs.': 'Missus', 'Ms.': 'Miz', 'St.': 'Saint', 'vs.': 'versus'}
+
+
+def expand_abbrev(text: str) -> str:
+    """Whisper writes "Dr. Lee" for spoken "Doctor Lee": expand before comparing."""
+    for a, b in ABBREV.items(): text = re.sub(r'(?<!\w)' + re.escape(a), b, text)
+    return text
+
+
 def line_hash(line: dict) -> str:
     key = json.dumps([line.get('text'), line.get('voice'), line.get('speed', 1.0), line.get('treat', 'normal')])
     return hashlib.sha1(key.encode()).hexdigest()
@@ -81,7 +90,7 @@ def whisper_check(line: dict, wav: Path):
     got = ' '.join(s.text.strip() for s in segs)
     words = [[w.word.strip(), round(w.start - .6, 3), round(w.end - .6, 3)] for s in segs for w in s.words]
     wants = [x for x in (line.get('asr'), line['text'], number_asr(line['text'])) if x]
-    ok = any(AC.compare(w, got, 'en')[0] for w in wants)
+    ok = any(AC.compare(w, expand_abbrev(got), 'en')[0] for w in wants)
     print(('OK  ' if ok else 'DIFF'), line['id'], '|', line['text'], '→', got)
     return ok, words
 

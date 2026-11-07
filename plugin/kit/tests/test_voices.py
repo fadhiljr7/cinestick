@@ -23,6 +23,8 @@ class Pure(unittest.TestCase):
     def test_line_hash_changes_with_text(self):
         a = dict(L[0]); b = dict(a, text='Other words.'); c = dict(a, who='cap')
         self.assertNotEqual(VV.line_hash(a), VV.line_hash(b)); self.assertEqual(VV.line_hash(a), VV.line_hash(c))
+    def test_expand_abbrev(self):
+        self.assertEqual(VV.expand_abbrev('Then, Dr. Lee and Mr. Smith met Mrs. Jones on St. Mark'), 'Then, Doctor Lee and Mister Smith met Missus Jones on Saint Mark')
     def test_number_asr(self):
         self.assertEqual(VV.number_asr('I have 1000 IQ'), 'I have a thousand IQ')
         self.assertIsNone(VV.number_asr('no digits'))
