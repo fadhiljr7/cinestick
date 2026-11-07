@@ -25,7 +25,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "insert"
   },
   {
    "id": "s02",
@@ -50,7 +51,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "establishing"
   },
   {
    "id": "s03",
@@ -75,7 +77,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "bigface"
   },
   {
    "id": "s04",
@@ -94,7 +97,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "establishing"
   },
   {
    "id": "s05",
@@ -119,7 +123,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s06",
@@ -144,7 +149,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s07",
@@ -163,7 +169,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s08",
@@ -193,7 +200,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "3d"
   },
   {
    "id": "s09",
@@ -218,7 +226,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "timeskip"
   },
   {
    "id": "s10",
@@ -237,7 +246,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "ots"
   },
   {
    "id": "s11",
@@ -262,7 +272,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "bigface"
   },
   {
    "id": "s12",
@@ -281,7 +292,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "bigface"
   },
   {
    "id": "s13",
@@ -306,7 +318,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s14",
@@ -336,7 +349,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "freeze"
   },
   {
    "id": "s15",
@@ -361,7 +375,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "bigface"
   },
   {
    "id": "s16",
@@ -380,7 +395,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "bigface"
   },
   {
    "id": "s17",
@@ -407,7 +423,8 @@
     }
    ],
    "amb": null,
-   "captions": true
+   "captions": true,
+   "type": "blueprint"
   },
   {
    "id": "s18",
@@ -432,7 +449,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "establishing"
   },
   {
    "id": "s19",
@@ -451,7 +469,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "bigface"
   },
   {
    "id": "s20",
@@ -481,7 +500,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s21",
@@ -511,7 +531,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s22",
@@ -536,7 +557,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "data"
   },
   {
    "id": "s23",
@@ -561,7 +583,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s24",
@@ -580,7 +603,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s25",
@@ -605,7 +629,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "bigface"
   },
   {
    "id": "s26",
@@ -624,7 +649,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s27",
@@ -651,7 +677,8 @@
     }
    ],
    "amb": null,
-   "captions": true
+   "captions": true,
+   "type": "blueprint"
   },
   {
    "id": "s28",
@@ -670,7 +697,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "bigface"
   },
   {
    "id": "s29",
@@ -702,7 +730,8 @@
     }
    ],
    "amb": null,
-   "captions": true
+   "captions": true,
+   "type": "data"
   },
   {
    "id": "s30",
@@ -737,7 +766,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "fact-object"
   },
   {
    "id": "s31",
@@ -756,7 +786,8 @@
     "name": "roomtone",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "two-shot"
   },
   {
    "id": "s32",
@@ -781,7 +812,8 @@
     "name": "hum",
     "gain": -26
    },
-   "captions": true
+   "captions": true,
+   "type": "callback"
   }
  ],
  "music": [
