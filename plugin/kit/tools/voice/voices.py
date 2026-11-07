@@ -101,11 +101,14 @@ def build_voices(project_dir, max_retries: int = 2, synth=None, check=None) -> d
     lines = json.load(open(P / 'input/lines.json'))
     cache = json.load(open(V / 'cache.json')) if (V / 'cache.json').exists() else {}
     words = json.load(open(V / 'words.json')) if (V / 'words.json').exists() else {}
+    flagged = set(json.load(open(V / 'flagged.json'))) if (V / 'flagged.json').exists() else set()
     res = {'ok': [], 'flagged': [], 'cached': []}
     for l in lines:
         h, wav = line_hash(l), V / f"{l['id']}.wav"
         if cache.get(l['id']) == h and wav.exists() and l['id'] in words:
-            res['cached'].append(l['id']); continue
+            if l['id'] not in flagged: res['cached'].append(l['id']); continue
+            ok, w = check(l, wav)                       # flagged last time: listen again (an asr hint may fix it) before re-making
+            if ok: words[l['id']] = w; res['ok'].append(l['id']); flagged.discard(l['id']); continue
         speed, ok = float(l.get('speed', 1.0)), False
         for attempt in range(max_retries + 1):
             synth(l, speed, wav)
@@ -114,10 +117,12 @@ def build_voices(project_dir, max_retries: int = 2, synth=None, check=None) -> d
             if ok: break
             speed = round(speed - SPEED_STEP, 3)
         res['ok' if ok else 'flagged'].append(l['id'])
+        (flagged.discard if ok else flagged.add)(l['id'])
         cache[l['id']] = h
     ids = {l['id'] for l in lines}
     json.dump({k: v for k, v in words.items() if k in ids}, open(V / 'words.json', 'w'), indent=0)
     json.dump({k: v for k, v in cache.items() if k in ids}, open(V / 'cache.json', 'w'), indent=1)
+    json.dump(sorted(flagged & ids), open(V / 'flagged.json', 'w'))
     return res
 
 

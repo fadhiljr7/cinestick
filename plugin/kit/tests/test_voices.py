@@ -45,4 +45,11 @@ class Build(unittest.TestCase):
         res = VV.build_voices(d, synth=r.synth, check=r.check)
         self.assertEqual(r.calls, [('a', 1.0), ('a', 0.95), ('a', 0.9)]); self.assertEqual(res['flagged'], ['a'])
 
+    def test_flagged_line_rechecked_next_run(self):
+        d = project(L[:1]); r = Recorder(ok=False)
+        VV.build_voices(d, synth=r.synth, check=r.check)
+        r.ok = True; r.calls.clear()
+        res = VV.build_voices(d, synth=r.synth, check=r.check)
+        self.assertEqual(res['ok'], ['a']); self.assertEqual(r.calls, [])      # re-checked without re-making the audio
+
 if __name__ == '__main__': unittest.main()
