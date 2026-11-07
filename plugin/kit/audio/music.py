@@ -140,12 +140,17 @@ def render_score(plan, total, seed=1, key=None):
         st, en = max(0, s["start"]), min(total, s["end"])
         if en - st < 0.5: continue
         y = render_section(s.get("mood", "mystery"), s.get("intensity", 0.5), en - st + xf, seed + i * 101, key)
-        m = len(y); fin = secs(xf if i else 2.5); fo = secs(xf)
+        after_cut = i > 0 and plan[i - 1].get("cut")          # cinestick: a section after a hard stop starts on time, quickly
+        m = len(y); fin = secs(0.15 if after_cut else (xf if i else 2.5)); fo = secs(xf)
         ramp_in = np.sin(np.linspace(0, np.pi / 2, fin)) ** 2
         y[:fin] *= ramp_in[:, None]
+        if s.get("cut"):                                       # cinestick: stop dead at `end` (silence before the reveal)
+            y = y[:secs(en - st)]; fo = secs(0.08)
+            y[-fo:] *= (np.cos(np.linspace(0, np.pi / 2, fo)) ** 2)[:, None]
+            place(out, y, secs(st)); continue
         cut = secs(en - st + xf); y = y[:cut]
         if i < len(plan) - 1: y[-fo:] *= (np.cos(np.linspace(0, np.pi / 2, fo)) ** 2)[:, None]
-        place(out, y, secs(st - (xf * 0.5 if i else 0)))
+        place(out, y, secs(st - (xf * 0.5 if i and not after_cut else 0)))
     k = secs(3.0); out[-k:] *= np.linspace(1, 0, k)[:, None]
     return (out * db(-20 - rms_db(out))).astype(np.float32)
 
