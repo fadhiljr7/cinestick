@@ -17,6 +17,7 @@ References (in `references/`, read each one when its step needs it):
 - `voice.md`
 - `sound.md`
 - `render-qc.md`
+- `thumbnail.md`, `youtube-metadata.md` (the YouTube kit, step 9)
 
 The worked example is `cinestick-studio/examples/medicine/`. Read its `scenes/` once to learn the patterns, but don't reuse its pictures.
 
@@ -59,9 +60,23 @@ Send the user the final contact sheet with one line on what's coming, then conti
 - Short: `node render.mjs --project projects/<slug>` (background; share the ETA from the log). Long: `$PY tools/render_long.py --project projects/<slug>`.
 - Then `$PY audio/mix.py --project projects/<slug>`, which builds the music, SFX and ambience, ducks the music under the voice, normalises to −14 LUFS and writes `out/<Title>.mp4`.
 
-## 8. QC + deliver
+## 8. QC
 - `ffprobe`: duration ≈ `shots.json` duration, audio present.
 - Loudness −14 ±1 LUFS (`ffmpeg -af ebur128`).
 - A 1-frame-per-6-s contact sheet of the final file (look at it).
 - Write `out/<Title>.srt` from `timeline/words.json` (caption groups).
-- Send the MP4. Then report in a short paragraph: where the files are, the narrator/cast/voices used, anything flagged or assumed, and one tweak to consider.
+
+## 9. YouTube kit (automatic, after the MP4)
+The format comes from `config.json` (aspect + length). Never ask for the thumbnail size or description style.
+- **Thumbnail** (`references/thumbnail.md`): write `scenes/shots/thumbnail.js` (`registerShot('thumbnail', …)`), a composition made for this video. Run `$PY tools/thumbnail.py --project projects/<slug>`. It renders exactly **1080 × 1920** for 9:16 or **1280 × 720** for 16:9. Open the JPG and redraw until it passes the checklist.
+- **Metadata** (`references/youtube-metadata.md`): `$PY tools/publish.py facts --project projects/<slug>`, then write `story/metadata.json` (3 titles with one best, the description, tags). Run `$PY tools/publish.py build --project projects/<slug>` until it prints no `META` problems. For long videos the real chapter timestamps are inserted from the shot plan.
+
+## 10. Deliver
+Send the MP4 and the thumbnail. Then show the YouTube kit in this order:
+1. **Video Title** (best ★ + 2 alternatives, one line on why the best);
+2. **Video Description**;
+3. **Video Tags**;
+4. **Generated Thumbnail**;
+5. **Thumbnail Resolution and Aspect Ratio**.
+
+Finish with a short paragraph: where the files are (`out/`: MP4, `.srt`, thumbnail JPG, `.youtube.md`, `.description.txt`, `.tags.txt`), the narrator/cast/voices used, anything flagged or assumed, and one tweak to consider.

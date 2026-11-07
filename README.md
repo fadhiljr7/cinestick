@@ -77,14 +77,15 @@ Whisper downloads its `base.en` model (~145 MB) the first time it checks a voice
    - for a long video: a cold open, the chapters and an outro.
 
    Change anything and it re-pitches. If you wrote some lines yourself, they're kept word for word.
-2. **Everything else runs on its own**: voices → shots → scenes (it checks its own contact sheets) → render → music & SFX → MP4. You get the contact sheet on the way and the MP4 at the end.
-3. **Files:** `cinestick-studio/projects/<slug>/out/<Title>.mp4` (+ `.srt`).
+2. **Everything else runs on its own**: voices → shots → scenes (it checks its own contact sheets) → render → music & SFX → MP4 → **YouTube kit** (titles, description, tags, thumbnail). You get the contact sheet on the way, then the MP4, the thumbnail and the upload text at the end.
+3. **Files:** `cinestick-studio/projects/<slug>/out/`: `<Title>.mp4`, `.srt`, `_thumbnail.jpg`, `.youtube.md`, `.description.txt`, `.tags.txt`.
 
 Re-run single steps when you want changes:
 - `/cinestick:story`: new beats or cast;
 - `/cinestick:voices`: change a voice or line; only changed lines are re-made;
 - `/cinestick:render`: sheets, previews, re-render;
-- `/cinestick:sound`: music mood, SFX, your own music.
+- `/cinestick:sound`: music mood, SFX, your own music;
+- `/cinestick:publish`: redo the titles, description, tags or thumbnail.
 
 ## How it works
 ```
@@ -133,6 +134,18 @@ title / idea / script
 3. adds the SFX;
 4. normalises the master to **−14 LUFS** (YouTube/Shorts loudness);
 5. muxes the MP4.
+
+## YouTube title, description, tags and thumbnail
+After every video, cinestick prepares the upload. It uses the format you already chose and asks nothing new.
+
+- **Titles:** 3 options, one marked ★ best (your own title can be one of them). They're accurate, search-friendly and not clickbait.
+- **Description:**
+  - **Short (9:16):** 1–3 short sentences, ≤ 500 characters, plus `#Shorts`.
+  - **Long (16:9):** an overview, **chapters with timestamps**, key facts, a call to action and hashtags. The timestamps are **computed from the real shot plan** (`story/shots.json` chapters), never typed by hand. The tool also checks YouTube's chapter rules: ≥ 3 chapters, the first at 00:00, each ≥ 10 s.
+- **Tags:** 8–25 specific search terms (topic → niche → audience), within YouTube's 500-character limit. No duplicates or unrelated terms.
+- **Thumbnail:** drawn in code for that video, with its cast, accent colour and a single bold idea; ≤ 4 words of text, high contrast, safe zones respected. Exactly **1080 × 1920** for Shorts or **1280 × 720** for long videos, as a JPG under YouTube's 2 MB limit.
+
+You get `out/<Title>.youtube.md` with five sections (title, description, tags, thumbnail, resolution and aspect ratio), plus `.description.txt`, `.tags.txt`, `.metadata.json` and `_thumbnail.jpg`, ready to paste. Redo it any time with `/cinestick:publish`.
 
 ## Directing rules
 Learned by studying ten reference story shorts frame by frame. The full rulebook is in `plugin/skills/make-video/references/directing.md`, and `tools/plan_check.py` enforces the numbers.

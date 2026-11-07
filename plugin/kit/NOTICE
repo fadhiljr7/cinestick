@@ -11,7 +11,8 @@ NOTICE — third-party code in this folder
    Also derived from its documentation (adapted): plugin/skills/make-video/references/{style-bible,engine-api,render-qc,sound}.md
    Changes made for cinestick:
      - engine/player.js: projects may replace the caption renderer (window.CAPTIONS hook)
-     - render.mjs: PW_CHROMIUM environment variable selects an existing Chromium/headless-shell
+     - render.mjs: PW_CHROMIUM environment variable selects an existing Chromium/headless-shell; --thumbnail mode
+     - engine/player.js: ?thumb=1 renders only the project's `thumbnail` shot
      - tools/new_project.py, tools/doctor.py: cinestick defaults and checks (verify_kit.py removed)
      - audio/music.py: a section with "cut": true stops dead at its end (silence before the reveal)
 

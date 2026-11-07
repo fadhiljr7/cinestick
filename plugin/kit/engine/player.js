@@ -20,6 +20,10 @@ async function loadFonts() {
 async function boot() {
   const cfg = await (await fetch(`${PROJ}/config.json`)).json();
   const story = await (await fetch(`${PROJ}/story/shots.json`)).json();
+  if (q.has('thumb')) {   // cinestick: render only the project's `thumbnail` shot (no captions, bars or fades)
+    story.shots = [{ id: 'thumbnail', start: 0, end: 10, bars: 'none', captions: false, in: { type: 'cut' } }]; story.duration = 10;
+    Object.assign(cfg, { captions: false, fadeIn: 0, fadeOut: 0, bars: 'none' });
+  }
   let words = []; try { const r = await fetch(`${PROJ}/timeline/words.json`); if (r.ok) words = await r.json(); } catch {}
   const vertical = (cfg.aspect || '16:9') === '9:16';
   const short = RES[cfg.resolution || '1080p'] || 1080, long = Math.round((short * 16) / 9 / 2) * 2;

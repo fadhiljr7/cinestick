@@ -2,7 +2,7 @@ import unittest
 from pathlib import Path
 R = Path(__file__).resolve().parents[3] / 'README.md'
 HEADS = ['## What it makes', '## Install', '## Use', '## How it works', '## How the voice-over is made', '## How the music is made',
-         '## How the sound effects are made', '## The mix', '## Directing rules', '## Troubleshooting', '## Credits & licenses']
+         '## How the sound effects are made', '## The mix', '## YouTube title, description, tags and thumbnail', '## Directing rules', '## Troubleshooting', '## Credits & licenses']
 
 class Readme(unittest.TestCase):
     def test_headings_in_order(self):

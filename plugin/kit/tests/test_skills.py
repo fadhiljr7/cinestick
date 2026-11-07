@@ -10,17 +10,17 @@ def front(p):
 
 class Skills(unittest.TestCase):
     def test_front_matter(self):
-        files = list(SK.glob('*/SKILL.md')); self.assertEqual({f.parent.name for f in files}, {'make-video', 'story', 'voices', 'render', 'sound'})
+        files = list(SK.glob('*/SKILL.md')); self.assertEqual({f.parent.name for f in files}, {'make-video', 'story', 'voices', 'render', 'sound', 'publish'})
         for f in files:
             fm = front(f); self.assertIn('name', fm, f); self.assertIn('description', fm, f)
             self.assertNotIn(fm['name'], TAKEN); self.assertIn('cinestick', fm['description'].lower(), f)
     def test_orchestrator(self):
         t = (SK / 'make-video/SKILL.md').read_text()
-        for w in ['Hook', 'Setup', 'Doubter', 'Escalation', 'Turn', 'Reveal', 'Closing line', 'plan_check.py', 'voices.py', 'mix.py', 'Good to go, or what should change?']:
+        for w in ['Hook', 'Setup', 'Doubter', 'Escalation', 'Turn', 'Reveal', 'Closing line', 'plan_check.py', 'voices.py', 'mix.py', 'Good to go, or what should change?', 'publish.py', 'thumbnail.py', 'Thumbnail Resolution and Aspect Ratio']:
             self.assertIn(w, t, w)
     def test_references(self):
         R = SK / 'make-video/references'
-        for f in ['install.md', 'story-short.md', 'story-long.md', 'directing.md', 'style-bible.md', 'cast-and-creatures.md', 'engine-api.md', 'voice.md', 'sound.md', 'render-qc.md']:
+        for f in ['install.md', 'story-short.md', 'story-long.md', 'directing.md', 'style-bible.md', 'cast-and-creatures.md', 'engine-api.md', 'voice.md', 'sound.md', 'render-qc.md', 'thumbnail.md', 'youtube-metadata.md']:
             self.assertTrue((R / f).is_file(), f)
         d = (R / 'directing.md').read_text()
         for t in SHOT_TYPES: self.assertIn(f'`{t}`', d, t)

@@ -4,6 +4,7 @@
 //   node render.mjs --project P --sheet                               one still per shot -> build/sheets/*.png
 //   node render.mjs --project P --stills 3.5,12,40                    stills at times -> build/stills
 //   node render.mjs --project P --styles dusk,midnight,golden,neon --at 3.5,12,40   style comparison grid
+//   node render.mjs --project P --thumbnail --at 1 --scale K --out FILE      cinestick: the project's `thumbnail` shot
 // Options: --workers N  --scale K  --style ID  --debug  --format png|jpeg  --crf 18  --gl auto|gpu|swiftshader  --out FILE
 import http from 'node:http';
 import fs from 'node:fs';
@@ -36,7 +37,7 @@ const CFG = JSON.parse(fs.readFileSync(path.join(PROJECT, 'config.json'), 'utf8'
 const FPS = CFG.fps || 24;
 
 async function openPlayer(browser, style) {
-  const qs = new URLSearchParams(); if (args.scale) qs.set('scale', args.scale); if (style || args.style) qs.set('style', style || args.style); if (args.debug) qs.set('debug', '1');
+  const qs = new URLSearchParams(); if (args.scale) qs.set('scale', args.scale); if (style || args.style) qs.set('style', style || args.style); if (args.debug) qs.set('debug', '1'); if (args.thumbnail) qs.set('thumb', '1');
   const page = await browser.newPage({ viewport: { width: 640, height: 360 } });
   page.on('pageerror', e => console.log('[pageerror]', e.message));
   page.on('console', m => { const t = m.text(); if (/ERROR|missing/i.test(t)) console.log('[page]', t); });
@@ -100,6 +101,14 @@ async function renderStills() {
   else { const per = 24; for (let i = 0; i < all.length; i += per) await contactSheet(browser, all.slice(i, i + per), path.join(dir, `sheet_${String(i / per + 1).padStart(2, '0')}.png`), 4, 440); }
   await browser.close(); console.log(`Wrote ${all.length} stills + contact sheet(s) to ${dir}`);
 }
-try { if (args.sheet || args.stills || args.styles) await renderStills(); else await renderVideo(); }
+// cinestick: one still of the project's `thumbnail` shot at time --at → --out (PNG)
+async function renderThumb() {
+  const browser = await chromium.launch(LAUNCH); const page = await openPlayer(browser);
+  if (!(await page.evaluate('window.SHOT_LIST'))[0].ok) throw new Error("no registerShot('thumbnail', …) in scenes/");
+  const img = await page.evaluate(i => window.renderFrame(i), Math.round((+args.at || 1) * FPS)).then(() => page.screenshot({ type: 'png' }));
+  const out = path.resolve(args.out || path.join(BUILD, 'thumbnail.png')); fs.writeFileSync(out, img);
+  (await page.evaluate('window.ERRORS')).forEach(e => console.log('  shot error:', e)); await browser.close(); console.log('thumbnail →', out);
+}
+try { if (args.thumbnail) await renderThumb(); else if (args.sheet || args.stills || args.styles) await renderStills(); else await renderVideo(); }
 catch (e) { console.error('RENDER FAILED:', e.message); process.exitCode = 1; }
 finally { server.close(); }

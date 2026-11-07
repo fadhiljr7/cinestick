@@ -12,7 +12,8 @@ Long videos do not use the seven beats as a whole. Their shape:
 Rules:
 - The narrator mode and cast rules are the same as Shorts (`story-short.md`). Dialogue in every chapter.
 - 150–190 wpm. A sentence is ≤ 22 words.
-- Chapter ids go into `lines.json` (`"chapter": "c1"` …) and into every shot (`"chapter"`), so the plan check and `tools/render_long.py` work per chapter.
+- Chapter ids go into `lines.json` (`"chapter": "c1"` …) and into every shot (`"chapter"`), so the plan check and `tools/render_long.py` work per chapter. The cold open is chapter `open`.
+- `story/shots.json` gets `"chapters": [{"id": "open", "title": "Introduction"}, {"id": "c1", "title": "…"}, …]`, short viewer-facing titles. They become the description's timestamps, which are timed from the real shots. Keep every chapter ≥ 10 s (YouTube's rule).
 - Music: one mood section per chapter (or two for a chapter with a turn).
 
 ## The checkpoint for a long video
