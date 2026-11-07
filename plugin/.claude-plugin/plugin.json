@@ -2,7 +2,21 @@
   "name": "cinestick",
   "version": "0.1.0",
   "description": "Turn a title or script into a finished cinematic stick-figure video: story beats, Kokoro voices, dialogue, directed shots, music, SFX, MP4 (9:16 or 16:9, short or long).",
-  "author": { "name": "fadhiljr7" },
+  "author": {
+    "name": "fadhiljr7",
+    "url": "https://github.com/fadhiljr7"
+  },
   "license": "MIT",
-  "keywords": ["video", "animation", "stick figure", "shorts", "kokoro", "tts", "explainer", "storytelling"]
+  "keywords": [
+    "video",
+    "animation",
+    "stick figure",
+    "shorts",
+    "kokoro",
+    "tts",
+    "explainer",
+    "storytelling"
+  ],
+  "homepage": "https://github.com/fadhiljr7/cinestick",
+  "repository": "https://github.com/fadhiljr7/cinestick"
 }
