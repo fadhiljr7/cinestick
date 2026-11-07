@@ -1,0 +1,826 @@
+{
+ "title": "The Medicine That Fights Back",
+ "duration": 73.02,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0,
+   "end": 1.21,
+   "line": "I took one tiny pill,",
+   "scene": "INSERT: Maya's hand lifts one glowing cyan pill to camera, apartment blurred behind, slow push-in",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "blip",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s02",
+   "start": 1.21,
+   "end": 3.53,
+   "line": "and it started a war inside my body.",
+   "scene": "BODY WIDE: the cyan pill crashes into the green germ army, shock rings, shake",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s03",
+   "start": 3.53,
+   "end": 5.83,
+   "line": "But the real enemy wasn't what I expected.",
+   "scene": "DARK CLOSE: one purple germ in shadow, purple rim, eyes open and smirk on \"expected\"",
+   "set": "body",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "stinger",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s04",
+   "start": 5.83,
+   "end": 7.29,
+   "line": "It started with a sore throat.",
+   "scene": "ESTABLISHING: apartment at dusk, big window skyline, Maya on couch, Cap at the desk, slow push",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s05",
+   "start": 7.29,
+   "end": 9.06,
+   "line": "Ugh. My throat is on fire.",
+   "scene": "MEDIUM: Maya on couch clutching throat, talks, flame puffs at her neck, thermometer",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "hit",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s06",
+   "start": 9.06,
+   "end": 10.88,
+   "line": "Nice warm throat! Let's move in!",
+   "scene": "THROAT CAVE: green germ leader with a tiny suitcase waves the gang in, talks",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s07",
+   "start": 10.88,
+   "end": 12.15,
+   "line": "Split! Split! Split!",
+   "scene": "THROAT CAVE: germs split in two on each \"Split!\", pop pop pop",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s08",
+   "start": 12.15,
+   "end": 15.87,
+   "line": "An army of bacteria invaded my body, multiplying rapidly.",
+   "scene": "3D FLY-THROUGH: red tunnel, green germ army doubling, x2 x4 badge counts up",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "whoosh",
+     "gain": -12
+    },
+    {
+     "at": 1.0,
+     "name": "counter",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s09",
+   "start": 15.87,
+   "end": 17.59,
+   "line": "And every hour, I got weaker.",
+   "scene": "Maya slumped on couch, wall clock spinning, health meter draining",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "clock",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s10",
+   "start": 17.59,
+   "end": 20.41,
+   "line": "Wait, how can one tiny pill defeat an entire army",
+   "scene": "OTS: blurred Maya fg, Cap holds up the tiny pill, talking, deadpan",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s11",
+   "start": 20.41,
+   "end": 22.01,
+   "line": "of invisible monsters?",
+   "scene": "BIG FACE: Cap, face snaps to shocked on \"monsters\"",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s12",
+   "start": 22.01,
+   "end": 22.93,
+   "line": "Just watch.",
+   "scene": "BIG FACE: Maya, smug half-lids, talks",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s13",
+   "start": 22.93,
+   "end": 24.95,
+   "line": "I swallowed the antibiotic.",
+   "scene": "MEDIUM: Maya tosses back the cyan pill with a glass, gulp",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "swish",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s14",
+   "start": 24.95,
+   "end": 27.3,
+   "line": "Suddenly, millions of bacteria started collapsing.",
+   "scene": "BODY: a cyan wave sweeps the cave, germs knocked flat; freeze-frame mid-wave with MILLIONS badge",
+   "set": "body",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "freeze",
+     "gain": -8
+    },
+    {
+     "at": 0.6,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s15",
+   "start": 27.3,
+   "end": 28.62,
+   "line": "My wall! It's cracking!",
+   "scene": "CLOSE: green germ, cracks spread over its wall, talks, then POP",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -6
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s16",
+   "start": 28.62,
+   "end": 30.35,
+   "line": "I can't split! Why can't I split?",
+   "scene": "CLOSE: germ stuck half-split, straining, sweat, talks",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s17",
+   "start": 30.35,
+   "end": 33.85,
+   "line": "Some lost their protective walls. Others could no longer reproduce.",
+   "scene": "BLUEPRINT: two panels: wall breaks \u2192 burst; split blocked \u2715, labels synced",
+   "set": "blueprint",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "blip",
+     "gain": -12
+    },
+    {
+     "at": 1.9,
+     "name": "blip",
+     "gain": -12
+    }
+   ],
+   "amb": null,
+   "captions": true
+  },
+  {
+   "id": "s18",
+   "start": 33.85,
+   "end": 35.59,
+   "line": "But a few bacteria survived.",
+   "scene": "LOW ANGLE: smoky battlefield, flat green germs, three purple germs stand untouched",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s19",
+   "start": 35.59,
+   "end": 37.65,
+   "line": "Is that all you've got?",
+   "scene": "BIG FACE: purple boss germ, smug, talks, scope bars",
+   "set": "body",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s20",
+   "start": 37.65,
+   "end": 39.6,
+   "line": "Then, something terrifying happens.",
+   "scene": "Maya on couch, lamp flickers out, room goes cold blue, push-in on worried face",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -8
+    },
+    {
+     "at": 0.5,
+     "name": "glitch",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s21",
+   "start": 39.6,
+   "end": 41.48,
+   "line": "Boys. Multiply.",
+   "scene": "Boss germ raises a fist, purple germs behind split pop pop",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s22",
+   "start": 41.48,
+   "end": 44.34,
+   "line": "The surviving bacteria began multiplying again.",
+   "scene": "WIDE: purple army doubling across the cave, counter badge",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "counter",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s23",
+   "start": 44.34,
+   "end": 46.8,
+   "line": "This time, the medicine didn't work against them.",
+   "scene": "Cyan wave hits the purple wall and bounces off, germs unbothered",
+   "set": "body",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "hit",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s24",
+   "start": 46.8,
+   "end": 48.2,
+   "line": "Why isn't it working anymore?",
+   "scene": "TWO-SHOT: Cap leaning over the couch, worried, talks; Maya sweaty",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s25",
+   "start": 48.2,
+   "end": 50.08,
+   "line": "Because they've become resistant.",
+   "scene": "BIG FACE: Maya serious, purple glow creeps in behind on \"resistant\"",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "stinger",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s26",
+   "start": 50.08,
+   "end": 53.54,
+   "line": "You see, antibiotics don't teach your body to fight bacteria.",
+   "scene": "TWO-SHOT at the window: Maya explains holding the pill bottle, Cap listens, thinking",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s27",
+   "start": 53.54,
+   "end": 56.53,
+   "line": "They work by killing bacteria or stopping them from growing.",
+   "scene": "BLUEPRINT: pill \u2192 germ, two branches KILLS (burst) / STOPS GROWTH (frozen), synced",
+   "set": "blueprint",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "blip",
+     "gain": -12
+    },
+    {
+     "at": 1.8,
+     "name": "blip",
+     "gain": -12
+    }
+   ],
+   "amb": null,
+   "captions": true
+  },
+  {
+   "id": "s28",
+   "start": 56.53,
+   "end": 58.21,
+   "line": "So what happens if we use them wrong?",
+   "scene": "BIG FACE: Cap, thinking then worried, talks",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s29",
+   "start": 58.21,
+   "end": 63.67,
+   "line": "When antibiotics are used incorrectly, resistant bacteria can survive and multiply.",
+   "scene": "DATA: three rounds of medicine: green dots cleared, purple dots survive and take over",
+   "set": "blueprint",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 2.2,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 3.5,
+     "name": "blip",
+     "gain": -14
+    }
+   ],
+   "amb": null,
+   "captions": true
+  },
+  {
+   "id": "s30",
+   "start": 63.67,
+   "end": 66.56,
+   "line": "Eventually, medicines that once worked may no longer work.",
+   "scene": "PHARMACY SHELF: lateral track, bottles get stamped with red \u2715 one by one",
+   "set": "pharmacy",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "hit",
+     "gain": -14
+    },
+    {
+     "at": 1.8,
+     "name": "hit",
+     "gain": -14
+    },
+    {
+     "at": 2.4,
+     "name": "hit",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s31",
+   "start": 66.56,
+   "end": 69.48,
+   "line": "The scariest part? Antibiotics don't become weaker.",
+   "scene": "Maya alone at the night window, the cyan pill still glowing in her palm, push-in",
+   "set": "apartment",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   },
+   "captions": true
+  },
+  {
+   "id": "s32",
+   "start": 69.48,
+   "end": 73.02,
+   "line": "The bacteria become harder to kill.",
+   "scene": "CALLBACK to s03: purple boss in the dark, now a huge army behind, grin, knuckle crack",
+   "set": "body",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.5,
+     "name": "stinger",
+     "gain": -6
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "captions": true
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 5.83,
+   "mood": "tension",
+   "intensity": 0.55
+  },
+  {
+   "start": 5.83,
+   "end": 24.95,
+   "mood": "playful",
+   "intensity": 0.5
+  },
+  {
+   "start": 24.95,
+   "end": 33.85,
+   "mood": "action",
+   "intensity": 0.7
+  },
+  {
+   "start": 33.85,
+   "end": 48.2,
+   "mood": "dark",
+   "intensity": 0.6
+  },
+  {
+   "start": 48.2,
+   "end": 66.56,
+   "mood": "mystery",
+   "intensity": 0.35
+  },
+  {
+   "start": 66.56,
+   "end": 73.02,
+   "mood": "dark",
+   "intensity": 0.7
+  }
+ ],
+ "sfx": []
+}

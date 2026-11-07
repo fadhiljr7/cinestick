@@ -1,0 +1,195 @@
+[
+ {
+  "id": "d01",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.08,
+  "text": "I took one tiny pill, and it started a war inside my body."
+ },
+ {
+  "id": "d02",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.08,
+  "text": "But the real enemy wasn't what I expected."
+ },
+ {
+  "id": "d03",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.1,
+  "text": "It started with a sore throat."
+ },
+ {
+  "id": "d04",
+  "who": "maya",
+  "vo": false,
+  "voice": "af_heart",
+  "speed": 1.0,
+  "text": "Ugh. My throat is on fire.",
+  "asr": "Ugg, my throat is on fire."
+ },
+ {
+  "id": "d05",
+  "who": "germ",
+  "vo": false,
+  "voice": "am_echo",
+  "speed": 1.15,
+  "text": "Nice warm throat! Let's move in!"
+ },
+ {
+  "id": "d06",
+  "who": "germs",
+  "vo": false,
+  "voice": "am_echo",
+  "speed": 1.2,
+  "text": "Split! Split! Split!"
+ },
+ {
+  "id": "d07",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.1,
+  "text": "An army of bacteria invaded my body, multiplying rapidly. And every hour, I got weaker."
+ },
+ {
+  "id": "d08",
+  "who": "cap",
+  "vo": false,
+  "voice": "am_puck",
+  "speed": 1.08,
+  "text": "Wait, how can one tiny pill defeat an entire army of invisible monsters?"
+ },
+ {
+  "id": "d09",
+  "who": "maya",
+  "vo": false,
+  "voice": "af_heart",
+  "speed": 1.0,
+  "text": "Just watch."
+ },
+ {
+  "id": "d10",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.1,
+  "text": "I swallowed the antibiotic. Suddenly, millions of bacteria started collapsing."
+ },
+ {
+  "id": "d11",
+  "who": "germ",
+  "vo": false,
+  "voice": "am_echo",
+  "speed": 1.15,
+  "text": "My wall! It's cracking!"
+ },
+ {
+  "id": "d12",
+  "who": "germ2",
+  "vo": false,
+  "voice": "am_echo",
+  "speed": 1.15,
+  "text": "I can't split! Why can't I split?"
+ },
+ {
+  "id": "d13",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.1,
+  "text": "Some lost their protective walls. Others could no longer reproduce. But a few bacteria survived."
+ },
+ {
+  "id": "d14",
+  "who": "boss",
+  "vo": false,
+  "voice": "am_onyx",
+  "speed": 0.95,
+  "text": "Is that all you've got?"
+ },
+ {
+  "id": "d15",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.0,
+  "text": "Then, something terrifying happens."
+ },
+ {
+  "id": "d16",
+  "who": "boss",
+  "vo": false,
+  "voice": "am_onyx",
+  "speed": 0.9,
+  "text": "Boys. Multiply."
+ },
+ {
+  "id": "d17",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.1,
+  "text": "The surviving bacteria began multiplying again. This time, the medicine didn't work against them."
+ },
+ {
+  "id": "d18",
+  "who": "cap",
+  "vo": false,
+  "voice": "am_puck",
+  "speed": 1.08,
+  "text": "Why isn't it working anymore?"
+ },
+ {
+  "id": "d19",
+  "who": "maya",
+  "vo": false,
+  "voice": "af_heart",
+  "speed": 1.05,
+  "text": "Because they've become resistant."
+ },
+ {
+  "id": "d20",
+  "who": "maya",
+  "vo": false,
+  "voice": "af_heart",
+  "speed": 1.08,
+  "text": "You see, antibiotics don't teach your body to fight bacteria. They work by killing bacteria or stopping them from growing."
+ },
+ {
+  "id": "d21",
+  "who": "cap",
+  "vo": false,
+  "voice": "am_puck",
+  "speed": 1.08,
+  "text": "So what happens if we use them wrong?"
+ },
+ {
+  "id": "d22",
+  "who": "maya",
+  "vo": false,
+  "voice": "af_heart",
+  "speed": 1.08,
+  "text": "When antibiotics are used incorrectly, resistant bacteria can survive and multiply. Eventually, medicines that once worked may no longer work."
+ },
+ {
+  "id": "d23",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.02,
+  "text": "The scariest part? Antibiotics don't become weaker."
+ },
+ {
+  "id": "d24",
+  "who": "maya",
+  "vo": true,
+  "voice": "af_heart",
+  "speed": 1.0,
+  "text": "The bacteria become harder to kill."
+ }
+]

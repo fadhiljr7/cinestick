@@ -1,0 +1,12 @@
+{
+  "name": "cinestick",
+  "owner": { "name": "fadhiljr7" },
+  "metadata": { "description": "Cinestick: cinematic stick-figure story videos with talking characters, made entirely in code." },
+  "plugins": [
+    {
+      "name": "cinestick",
+      "source": "./plugin",
+      "description": "Turn a title or script into a finished cinematic stick-figure video: story beats, Kokoro voices, dialogue, directed shots, music, SFX, MP4 (9:16 or 16:9, short or long)."
+    }
+  ]
+}

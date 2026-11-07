@@ -1,0 +1,1223 @@
+{
+ "source": "kokoro per-line + whisper base.en",
+ "words": [
+  {
+   "word": "I",
+   "start": 0.19,
+   "end": 0.25,
+   "line": "d01"
+  },
+  {
+   "word": "took",
+   "start": 0.25,
+   "end": 0.41,
+   "line": "d01"
+  },
+  {
+   "word": "one",
+   "start": 0.41,
+   "end": 0.63,
+   "line": "d01"
+  },
+  {
+   "word": "tiny",
+   "start": 0.63,
+   "end": 0.97,
+   "line": "d01"
+  },
+  {
+   "word": "pill,",
+   "start": 0.97,
+   "end": 1.33,
+   "line": "d01"
+  },
+  {
+   "word": "and",
+   "start": 1.33,
+   "end": 1.81,
+   "line": "d01"
+  },
+  {
+   "word": "it",
+   "start": 1.81,
+   "end": 1.91,
+   "line": "d01"
+  },
+  {
+   "word": "started",
+   "start": 1.91,
+   "end": 2.09,
+   "line": "d01"
+  },
+  {
+   "word": "a",
+   "start": 2.09,
+   "end": 2.23,
+   "line": "d01"
+  },
+  {
+   "word": "war",
+   "start": 2.23,
+   "end": 2.45,
+   "line": "d01"
+  },
+  {
+   "word": "inside",
+   "start": 2.45,
+   "end": 2.69,
+   "line": "d01"
+  },
+  {
+   "word": "my",
+   "start": 2.69,
+   "end": 2.99,
+   "line": "d01"
+  },
+  {
+   "word": "body.",
+   "start": 2.99,
+   "end": 3.37,
+   "line": "d01"
+  },
+  {
+   "word": "But",
+   "start": 3.646,
+   "end": 3.706,
+   "line": "d02"
+  },
+  {
+   "word": "the",
+   "start": 3.706,
+   "end": 3.786,
+   "line": "d02"
+  },
+  {
+   "word": "real",
+   "start": 3.786,
+   "end": 3.946,
+   "line": "d02"
+  },
+  {
+   "word": "enemy",
+   "start": 3.946,
+   "end": 4.326,
+   "line": "d02"
+  },
+  {
+   "word": "wasn't",
+   "start": 4.326,
+   "end": 4.946,
+   "line": "d02"
+  },
+  {
+   "word": "what",
+   "start": 4.946,
+   "end": 5.026,
+   "line": "d02"
+  },
+  {
+   "word": "I",
+   "start": 5.026,
+   "end": 5.146,
+   "line": "d02"
+  },
+  {
+   "word": "expected.",
+   "start": 5.146,
+   "end": 5.446,
+   "line": "d02"
+  },
+  {
+   "word": "It",
+   "start": 5.947,
+   "end": 6.007,
+   "line": "d03"
+  },
+  {
+   "word": "started",
+   "start": 6.007,
+   "end": 6.227,
+   "line": "d03"
+  },
+  {
+   "word": "with",
+   "start": 6.227,
+   "end": 6.467,
+   "line": "d03"
+  },
+  {
+   "word": "a",
+   "start": 6.467,
+   "end": 6.527,
+   "line": "d03"
+  },
+  {
+   "word": "sore",
+   "start": 6.527,
+   "end": 6.707,
+   "line": "d03"
+  },
+  {
+   "word": "throat.",
+   "start": 6.707,
+   "end": 7.007,
+   "line": "d03"
+  },
+  {
+   "word": "Ugh.",
+   "start": 7.409,
+   "end": 7.669,
+   "line": "d04"
+  },
+  {
+   "word": "My",
+   "start": 7.829,
+   "end": 7.889,
+   "line": "d04"
+  },
+  {
+   "word": "throat",
+   "start": 7.889,
+   "end": 8.129,
+   "line": "d04"
+  },
+  {
+   "word": "is",
+   "start": 8.129,
+   "end": 8.329,
+   "line": "d04"
+  },
+  {
+   "word": "on",
+   "start": 8.329,
+   "end": 8.449,
+   "line": "d04"
+  },
+  {
+   "word": "fire.",
+   "start": 8.449,
+   "end": 8.729,
+   "line": "d04"
+  },
+  {
+   "word": "Nice",
+   "start": 9.183,
+   "end": 9.303,
+   "line": "d05"
+  },
+  {
+   "word": "warm",
+   "start": 9.303,
+   "end": 9.543,
+   "line": "d05"
+  },
+  {
+   "word": "throat!",
+   "start": 9.543,
+   "end": 9.863,
+   "line": "d05"
+  },
+  {
+   "word": "Let's",
+   "start": 10.123,
+   "end": 10.323,
+   "line": "d05"
+  },
+  {
+   "word": "move",
+   "start": 10.323,
+   "end": 10.503,
+   "line": "d05"
+  },
+  {
+   "word": "in!",
+   "start": 10.503,
+   "end": 10.683,
+   "line": "d05"
+  },
+  {
+   "word": "Split!",
+   "start": 10.996,
+   "end": 11.156,
+   "line": "d06"
+  },
+  {
+   "word": "Split!",
+   "start": 11.276,
+   "end": 11.456,
+   "line": "d06"
+  },
+  {
+   "word": "Split!",
+   "start": 11.596,
+   "end": 11.876,
+   "line": "d06"
+  },
+  {
+   "word": "An",
+   "start": 12.273,
+   "end": 12.333,
+   "line": "d07"
+  },
+  {
+   "word": "army",
+   "start": 12.333,
+   "end": 12.613,
+   "line": "d07"
+  },
+  {
+   "word": "of",
+   "start": 12.613,
+   "end": 12.733,
+   "line": "d07"
+  },
+  {
+   "word": "bacteria",
+   "start": 12.733,
+   "end": 13.013,
+   "line": "d07"
+  },
+  {
+   "word": "invaded",
+   "start": 13.013,
+   "end": 13.453,
+   "line": "d07"
+  },
+  {
+   "word": "my",
+   "start": 13.453,
+   "end": 13.793,
+   "line": "d07"
+  },
+  {
+   "word": "body,",
+   "start": 13.793,
+   "end": 14.153,
+   "line": "d07"
+  },
+  {
+   "word": "multiplying",
+   "start": 14.413,
+   "end": 14.693,
+   "line": "d07"
+  },
+  {
+   "word": "rapidly.",
+   "start": 14.693,
+   "end": 15.313,
+   "line": "d07"
+  },
+  {
+   "word": "And",
+   "start": 15.993,
+   "end": 16.073,
+   "line": "d07"
+  },
+  {
+   "word": "every",
+   "start": 16.073,
+   "end": 16.233,
+   "line": "d07"
+  },
+  {
+   "word": "hour,",
+   "start": 16.233,
+   "end": 16.553,
+   "line": "d07"
+  },
+  {
+   "word": "I",
+   "start": 16.553,
+   "end": 16.833,
+   "line": "d07"
+  },
+  {
+   "word": "got",
+   "start": 16.833,
+   "end": 16.953,
+   "line": "d07"
+  },
+  {
+   "word": "weaker.",
+   "start": 16.953,
+   "end": 17.193,
+   "line": "d07"
+  },
+  {
+   "word": "Wait,",
+   "start": 17.714,
+   "end": 17.814,
+   "line": "d08"
+  },
+  {
+   "word": "how",
+   "start": 18.014,
+   "end": 18.134,
+   "line": "d08"
+  },
+  {
+   "word": "can",
+   "start": 18.134,
+   "end": 18.314,
+   "line": "d08"
+  },
+  {
+   "word": "one",
+   "start": 18.314,
+   "end": 18.494,
+   "line": "d08"
+  },
+  {
+   "word": "tiny",
+   "start": 18.494,
+   "end": 18.754,
+   "line": "d08"
+  },
+  {
+   "word": "pill",
+   "start": 18.754,
+   "end": 19.074,
+   "line": "d08"
+  },
+  {
+   "word": "defeat",
+   "start": 19.074,
+   "end": 19.414,
+   "line": "d08"
+  },
+  {
+   "word": "an",
+   "start": 19.414,
+   "end": 19.714,
+   "line": "d08"
+  },
+  {
+   "word": "entire",
+   "start": 19.714,
+   "end": 19.974,
+   "line": "d08"
+  },
+  {
+   "word": "army",
+   "start": 19.974,
+   "end": 20.534,
+   "line": "d08"
+  },
+  {
+   "word": "of",
+   "start": 20.534,
+   "end": 20.774,
+   "line": "d08"
+  },
+  {
+   "word": "invisible",
+   "start": 20.774,
+   "end": 21.054,
+   "line": "d08"
+  },
+  {
+   "word": "monsters?",
+   "start": 21.054,
+   "end": 21.474,
+   "line": "d08"
+  },
+  {
+   "word": "Just",
+   "start": 22.133,
+   "end": 22.333,
+   "line": "d09"
+  },
+  {
+   "word": "watch.",
+   "start": 22.333,
+   "end": 22.573,
+   "line": "d09"
+  },
+  {
+   "word": "I",
+   "start": 23.052,
+   "end": 23.112,
+   "line": "d10"
+  },
+  {
+   "word": "swallowed",
+   "start": 23.112,
+   "end": 23.412,
+   "line": "d10"
+  },
+  {
+   "word": "the",
+   "start": 23.412,
+   "end": 23.632,
+   "line": "d10"
+  },
+  {
+   "word": "antibiotic.",
+   "start": 23.632,
+   "end": 23.792,
+   "line": "d10"
+  },
+  {
+   "word": "Suddenly,",
+   "start": 25.072,
+   "end": 25.072,
+   "line": "d10"
+  },
+  {
+   "word": "millions",
+   "start": 25.352,
+   "end": 25.632,
+   "line": "d10"
+  },
+  {
+   "word": "of",
+   "start": 25.632,
+   "end": 25.852,
+   "line": "d10"
+  },
+  {
+   "word": "bacteria",
+   "start": 25.852,
+   "end": 26.032,
+   "line": "d10"
+  },
+  {
+   "word": "started",
+   "start": 26.032,
+   "end": 26.592,
+   "line": "d10"
+  },
+  {
+   "word": "collapsing.",
+   "start": 26.592,
+   "end": 27.032,
+   "line": "d10"
+  },
+  {
+   "word": "My",
+   "start": 27.416,
+   "end": 27.496,
+   "line": "d11"
+  },
+  {
+   "word": "wall!",
+   "start": 27.496,
+   "end": 27.716,
+   "line": "d11"
+  },
+  {
+   "word": "It's",
+   "start": 27.936,
+   "end": 28.056,
+   "line": "d11"
+  },
+  {
+   "word": "cracking!",
+   "start": 28.056,
+   "end": 28.276,
+   "line": "d11"
+  },
+  {
+   "word": "I",
+   "start": 28.738,
+   "end": 28.798,
+   "line": "d12"
+  },
+  {
+   "word": "can't",
+   "start": 28.798,
+   "end": 29.078,
+   "line": "d12"
+  },
+  {
+   "word": "split!",
+   "start": 29.078,
+   "end": 29.218,
+   "line": "d12"
+  },
+  {
+   "word": "Why",
+   "start": 29.358,
+   "end": 29.498,
+   "line": "d12"
+  },
+  {
+   "word": "can't",
+   "start": 29.498,
+   "end": 29.838,
+   "line": "d12"
+  },
+  {
+   "word": "I",
+   "start": 29.838,
+   "end": 29.858,
+   "line": "d12"
+  },
+  {
+   "word": "split?",
+   "start": 29.858,
+   "end": 30.078,
+   "line": "d12"
+  },
+  {
+   "word": "Some",
+   "start": 30.472,
+   "end": 30.612,
+   "line": "d13"
+  },
+  {
+   "word": "lost",
+   "start": 30.612,
+   "end": 30.812,
+   "line": "d13"
+  },
+  {
+   "word": "their",
+   "start": 30.812,
+   "end": 31.112,
+   "line": "d13"
+  },
+  {
+   "word": "protective",
+   "start": 31.112,
+   "end": 31.452,
+   "line": "d13"
+  },
+  {
+   "word": "walls.",
+   "start": 31.452,
+   "end": 31.792,
+   "line": "d13"
+  },
+  {
+   "word": "Others",
+   "start": 32.212,
+   "end": 32.532,
+   "line": "d13"
+  },
+  {
+   "word": "could",
+   "start": 32.532,
+   "end": 32.712,
+   "line": "d13"
+  },
+  {
+   "word": "no",
+   "start": 32.712,
+   "end": 32.872,
+   "line": "d13"
+  },
+  {
+   "word": "longer",
+   "start": 32.872,
+   "end": 33.152,
+   "line": "d13"
+  },
+  {
+   "word": "reproduce.",
+   "start": 33.152,
+   "end": 33.332,
+   "line": "d13"
+  },
+  {
+   "word": "But",
+   "start": 33.972,
+   "end": 34.112,
+   "line": "d13"
+  },
+  {
+   "word": "a",
+   "start": 34.112,
+   "end": 34.172,
+   "line": "d13"
+  },
+  {
+   "word": "few",
+   "start": 34.172,
+   "end": 34.312,
+   "line": "d13"
+  },
+  {
+   "word": "bacteria",
+   "start": 34.312,
+   "end": 34.592,
+   "line": "d13"
+  },
+  {
+   "word": "survived.",
+   "start": 34.592,
+   "end": 35.132,
+   "line": "d13"
+  },
+  {
+   "word": "Is",
+   "start": 35.706,
+   "end": 35.866,
+   "line": "d14"
+  },
+  {
+   "word": "that",
+   "start": 35.866,
+   "end": 36.086,
+   "line": "d14"
+  },
+  {
+   "word": "all",
+   "start": 36.086,
+   "end": 36.366,
+   "line": "d14"
+  },
+  {
+   "word": "you've",
+   "start": 36.366,
+   "end": 36.746,
+   "line": "d14"
+  },
+  {
+   "word": "got?",
+   "start": 36.746,
+   "end": 36.926,
+   "line": "d14"
+  },
+  {
+   "word": "Then,",
+   "start": 37.769,
+   "end": 37.909,
+   "line": "d15"
+  },
+  {
+   "word": "something",
+   "start": 38.109,
+   "end": 38.329,
+   "line": "d15"
+  },
+  {
+   "word": "terrifying",
+   "start": 38.329,
+   "end": 38.669,
+   "line": "d15"
+  },
+  {
+   "word": "happens.",
+   "start": 38.669,
+   "end": 39.269,
+   "line": "d15"
+  },
+  {
+   "word": "Boys.",
+   "start": 39.717,
+   "end": 40.097,
+   "line": "d16"
+  },
+  {
+   "word": "Multiply.",
+   "start": 40.097,
+   "end": 40.837,
+   "line": "d16"
+  },
+  {
+   "word": "The",
+   "start": 41.598,
+   "end": 41.658,
+   "line": "d17"
+  },
+  {
+   "word": "surviving",
+   "start": 41.658,
+   "end": 41.958,
+   "line": "d17"
+  },
+  {
+   "word": "bacteria",
+   "start": 41.958,
+   "end": 42.358,
+   "line": "d17"
+  },
+  {
+   "word": "began",
+   "start": 42.358,
+   "end": 42.858,
+   "line": "d17"
+  },
+  {
+   "word": "multiplying",
+   "start": 42.858,
+   "end": 43.318,
+   "line": "d17"
+  },
+  {
+   "word": "again.",
+   "start": 43.318,
+   "end": 43.758,
+   "line": "d17"
+  },
+  {
+   "word": "This",
+   "start": 44.458,
+   "end": 44.478,
+   "line": "d17"
+  },
+  {
+   "word": "time,",
+   "start": 44.478,
+   "end": 44.758,
+   "line": "d17"
+  },
+  {
+   "word": "the",
+   "start": 45.038,
+   "end": 45.178,
+   "line": "d17"
+  },
+  {
+   "word": "medicine",
+   "start": 45.178,
+   "end": 45.518,
+   "line": "d17"
+  },
+  {
+   "word": "didn't",
+   "start": 45.518,
+   "end": 45.818,
+   "line": "d17"
+  },
+  {
+   "word": "work",
+   "start": 45.818,
+   "end": 45.978,
+   "line": "d17"
+  },
+  {
+   "word": "against",
+   "start": 45.978,
+   "end": 46.178,
+   "line": "d17"
+  },
+  {
+   "word": "them.",
+   "start": 46.178,
+   "end": 46.498,
+   "line": "d17"
+  },
+  {
+   "word": "Why",
+   "start": 46.917,
+   "end": 46.997,
+   "line": "d18"
+  },
+  {
+   "word": "isn't",
+   "start": 46.997,
+   "end": 47.277,
+   "line": "d18"
+  },
+  {
+   "word": "it",
+   "start": 47.277,
+   "end": 47.337,
+   "line": "d18"
+  },
+  {
+   "word": "working",
+   "start": 47.337,
+   "end": 47.517,
+   "line": "d18"
+  },
+  {
+   "word": "anymore?",
+   "start": 47.517,
+   "end": 47.757,
+   "line": "d18"
+  },
+  {
+   "word": "Because",
+   "start": 48.316,
+   "end": 48.496,
+   "line": "d19"
+  },
+  {
+   "word": "they've",
+   "start": 48.496,
+   "end": 48.736,
+   "line": "d19"
+  },
+  {
+   "word": "become",
+   "start": 48.736,
+   "end": 48.976,
+   "line": "d19"
+  },
+  {
+   "word": "resistant.",
+   "start": 48.976,
+   "end": 49.336,
+   "line": "d19"
+  },
+  {
+   "word": "You",
+   "start": 50.197,
+   "end": 50.257,
+   "line": "d20"
+  },
+  {
+   "word": "see,",
+   "start": 50.257,
+   "end": 50.457,
+   "line": "d20"
+  },
+  {
+   "word": "antibiotics",
+   "start": 50.777,
+   "end": 50.897,
+   "line": "d20"
+  },
+  {
+   "word": "don't",
+   "start": 50.897,
+   "end": 51.657,
+   "line": "d20"
+  },
+  {
+   "word": "teach",
+   "start": 51.657,
+   "end": 51.797,
+   "line": "d20"
+  },
+  {
+   "word": "your",
+   "start": 51.797,
+   "end": 51.957,
+   "line": "d20"
+  },
+  {
+   "word": "body",
+   "start": 51.957,
+   "end": 52.157,
+   "line": "d20"
+  },
+  {
+   "word": "to",
+   "start": 52.157,
+   "end": 52.297,
+   "line": "d20"
+  },
+  {
+   "word": "fight",
+   "start": 52.297,
+   "end": 52.537,
+   "line": "d20"
+  },
+  {
+   "word": "bacteria.",
+   "start": 52.537,
+   "end": 52.897,
+   "line": "d20"
+  },
+  {
+   "word": "They",
+   "start": 53.657,
+   "end": 53.697,
+   "line": "d20"
+  },
+  {
+   "word": "work",
+   "start": 53.697,
+   "end": 53.857,
+   "line": "d20"
+  },
+  {
+   "word": "by",
+   "start": 53.857,
+   "end": 54.077,
+   "line": "d20"
+  },
+  {
+   "word": "killing",
+   "start": 54.077,
+   "end": 54.337,
+   "line": "d20"
+  },
+  {
+   "word": "bacteria",
+   "start": 54.337,
+   "end": 54.777,
+   "line": "d20"
+  },
+  {
+   "word": "or",
+   "start": 54.777,
+   "end": 55.317,
+   "line": "d20"
+  },
+  {
+   "word": "stopping",
+   "start": 55.317,
+   "end": 55.577,
+   "line": "d20"
+  },
+  {
+   "word": "them",
+   "start": 55.577,
+   "end": 55.877,
+   "line": "d20"
+  },
+  {
+   "word": "from",
+   "start": 55.877,
+   "end": 55.997,
+   "line": "d20"
+  },
+  {
+   "word": "growing.",
+   "start": 55.997,
+   "end": 56.257,
+   "line": "d20"
+  },
+  {
+   "word": "So",
+   "start": 56.646,
+   "end": 56.706,
+   "line": "d21"
+  },
+  {
+   "word": "what",
+   "start": 56.706,
+   "end": 56.846,
+   "line": "d21"
+  },
+  {
+   "word": "happens",
+   "start": 56.846,
+   "end": 57.106,
+   "line": "d21"
+  },
+  {
+   "word": "if",
+   "start": 57.106,
+   "end": 57.326,
+   "line": "d21"
+  },
+  {
+   "word": "we",
+   "start": 57.326,
+   "end": 57.446,
+   "line": "d21"
+  },
+  {
+   "word": "use",
+   "start": 57.446,
+   "end": 57.586,
+   "line": "d21"
+  },
+  {
+   "word": "them",
+   "start": 57.586,
+   "end": 57.746,
+   "line": "d21"
+  },
+  {
+   "word": "wrong?",
+   "start": 57.746,
+   "end": 57.966,
+   "line": "d21"
+  },
+  {
+   "word": "When",
+   "start": 58.333,
+   "end": 58.393,
+   "line": "d22"
+  },
+  {
+   "word": "antibiotics",
+   "start": 58.393,
+   "end": 58.593,
+   "line": "d22"
+  },
+  {
+   "word": "are",
+   "start": 58.593,
+   "end": 59.173,
+   "line": "d22"
+  },
+  {
+   "word": "used",
+   "start": 59.173,
+   "end": 59.793,
+   "line": "d22"
+  },
+  {
+   "word": "incorrectly,",
+   "start": 59.793,
+   "end": 59.793,
+   "line": "d22"
+  },
+  {
+   "word": "resistant",
+   "start": 60.493,
+   "end": 60.493,
+   "line": "d22"
+  },
+  {
+   "word": "bacteria",
+   "start": 60.493,
+   "end": 61.053,
+   "line": "d22"
+  },
+  {
+   "word": "can",
+   "start": 61.053,
+   "end": 61.473,
+   "line": "d22"
+  },
+  {
+   "word": "survive",
+   "start": 61.473,
+   "end": 61.753,
+   "line": "d22"
+  },
+  {
+   "word": "and",
+   "start": 61.753,
+   "end": 62.213,
+   "line": "d22"
+  },
+  {
+   "word": "multiply.",
+   "start": 62.213,
+   "end": 62.633,
+   "line": "d22"
+  },
+  {
+   "word": "Eventually,",
+   "start": 63.793,
+   "end": 63.793,
+   "line": "d22"
+  },
+  {
+   "word": "medicines",
+   "start": 64.033,
+   "end": 64.453,
+   "line": "d22"
+  },
+  {
+   "word": "that",
+   "start": 64.453,
+   "end": 64.793,
+   "line": "d22"
+  },
+  {
+   "word": "once",
+   "start": 64.793,
+   "end": 64.933,
+   "line": "d22"
+  },
+  {
+   "word": "worked",
+   "start": 64.933,
+   "end": 65.253,
+   "line": "d22"
+  },
+  {
+   "word": "may",
+   "start": 65.253,
+   "end": 65.453,
+   "line": "d22"
+  },
+  {
+   "word": "no",
+   "start": 65.453,
+   "end": 65.653,
+   "line": "d22"
+  },
+  {
+   "word": "longer",
+   "start": 65.653,
+   "end": 65.913,
+   "line": "d22"
+  },
+  {
+   "word": "work.",
+   "start": 65.913,
+   "end": 66.153,
+   "line": "d22"
+  },
+  {
+   "word": "The",
+   "start": 66.679,
+   "end": 66.739,
+   "line": "d23"
+  },
+  {
+   "word": "scariest",
+   "start": 66.739,
+   "end": 67.179,
+   "line": "d23"
+  },
+  {
+   "word": "part?",
+   "start": 67.179,
+   "end": 67.459,
+   "line": "d23"
+  },
+  {
+   "word": "Antibiotics",
+   "start": 67.799,
+   "end": 67.919,
+   "line": "d23"
+  },
+  {
+   "word": "don't",
+   "start": 67.919,
+   "end": 68.679,
+   "line": "d23"
+  },
+  {
+   "word": "become",
+   "start": 68.679,
+   "end": 68.899,
+   "line": "d23"
+  },
+  {
+   "word": "weaker.",
+   "start": 68.899,
+   "end": 69.179,
+   "line": "d23"
+  },
+  {
+   "word": "The",
+   "start": 69.603,
+   "end": 69.663,
+   "line": "d24"
+  },
+  {
+   "word": "bacteria",
+   "start": 69.663,
+   "end": 69.983,
+   "line": "d24"
+  },
+  {
+   "word": "become",
+   "start": 69.983,
+   "end": 70.423,
+   "line": "d24"
+  },
+  {
+   "word": "harder",
+   "start": 70.423,
+   "end": 70.703,
+   "line": "d24"
+  },
+  {
+   "word": "to",
+   "start": 70.703,
+   "end": 70.903,
+   "line": "d24"
+  },
+  {
+   "word": "kill.",
+   "start": 70.903,
+   "end": 71.063,
+   "line": "d24"
+  }
+ ]
+}

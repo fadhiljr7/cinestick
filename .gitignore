@@ -1,0 +1,11 @@
+node_modules/
+.venv/
+__pycache__/
+**/build/
+**/out/
+*.onnx
+*.bin
+*.wav
+projects/
+.superpowers/
+.DS_Store
