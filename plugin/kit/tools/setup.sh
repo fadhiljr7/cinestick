@@ -2,7 +2,7 @@
 # cinestick setup — run from the studio folder (the copy of plugin/kit in your workspace, e.g. ./cinestick-studio):
 #   sh tools/setup.sh              everything: checks, Python venv, npm, Chromium, Kokoro model, doctor, self-test
 #   sh tools/setup.sh --no-models  skip the ~350 MB voice-model download
-# Needs: Node >= 18, ffmpeg, and Python 3.11-3.13 (kokoro-onnx does not support 3.14 yet).
+# Needs: Node >= 18, ffmpeg, and Python 3.11-3.13 (kokoro-onnx does not support 3.14 yet). macOS or Linux; on Windows use WSL.
 # Slow Chromium download? Point PW_CHROMIUM at an existing Chromium / chrome-headless-shell and re-run.
 set -e
 cd "$(dirname "$0")/.."
@@ -27,7 +27,9 @@ fi
 
 say "JavaScript packages"
 npm install --silent
-if [ -n "$PW_CHROMIUM" ]; then echo "using PW_CHROMIUM=$PW_CHROMIUM"; else npx playwright install chromium; fi
+if [ -n "$PW_CHROMIUM" ]; then echo "using PW_CHROMIUM=$PW_CHROMIUM"
+elif [ "$(uname -s)" = "Linux" ]; then npx playwright install --with-deps chromium   # also the system libraries headless Chromium needs
+else npx playwright install chromium; fi
 
 if [ "$1" != "--no-models" ]; then
   say "Kokoro voice model (~350 MB, once)"

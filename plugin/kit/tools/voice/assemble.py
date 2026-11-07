@@ -41,15 +41,20 @@ def line_words(line: dict, asr: list, t0: float, dur: float) -> list:
     mk = lambda w, a, b: {'word': w, 'start': round(t0 + max(0.0, a), 3), 'end': round(t0 + min(b, dur), 3), 'line': line.get('id')}
     if len(toks) == len(asr):
         return [mk(toks[i], a, b) for i, (_, a, b) in enumerate(asr)]
-    # Different counts: align. A script token with digits ("1000") that Whisper heard as several words ("a thousand")
-    # becomes one caption word spanning them; everything else keeps Whisper's words.
+    # Different counts: align, and always show the script's spelling. A run of script tokens that Whisper heard differently
+    # ("thousand-piece" / "thousand" "-piece", "sixty" / "60", "one hundred sixty" / "160") shares Whisper's time span evenly;
+    # script words Whisper skipped get a short slot at the previous word's end; words Whisper added are dropped.
     import difflib
     norm = lambda s: re.sub(r"[^\w']", '', s.lower())
     out = []
     for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, [norm(t) for t in toks], [norm(w) for w, _, _ in asr], autojunk=False).get_opcodes():
         if op == 'equal': out += [mk(toks[i1 + k], asr[j1 + k][1], asr[j1 + k][2]) for k in range(i2 - i1)]
-        elif op == 'replace' and i2 - i1 == 1 and re.search(r'\d', toks[i1]) and j2 > j1: out.append(mk(toks[i1], asr[j1][1], asr[j2 - 1][2]))
-        else: out += [mk(w, a, b) for w, a, b in asr[j1:j2]]
+        elif op == 'replace':
+            a, b, n = asr[j1][1], asr[j2 - 1][2], i2 - i1
+            out += [mk(toks[i1 + k], a + (b - a) * k / n, a + (b - a) * (k + 1) / n) for k in range(n)]
+        elif op == 'delete':
+            t = (out[-1]['end'] - t0) if out else (asr[0][1] if asr else 0.0)
+            out += [mk(toks[i1 + k], t, t + 0.05) for k in range(i2 - i1)]
     return out
 
 

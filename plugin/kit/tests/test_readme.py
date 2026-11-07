@@ -10,6 +10,6 @@ class Readme(unittest.TestCase):
         self.assertTrue(all(p >= 0 for p in pos), [h for h, p in zip(HEADS, pos) if p < 0]); self.assertEqual(pos, sorted(pos))
     def test_key_strings(self):
         t = R.read_text()
-        for s in ['python@3.12', 'kokoro-onnx', 'faster-whisper', 'npx playwright install chromium', 'PW_CHROMIUM', '/plugin marketplace add']: self.assertIn(s, t, s)
+        for s in ['WSL', '--with-deps', 'deadsnakes', 'NodeSource', 'side by side', 'python@3.12', 'kokoro-onnx', 'faster-whisper', 'npx playwright install chromium', 'PW_CHROMIUM', '/plugin marketplace add']: self.assertIn(s, t, s)
 
 if __name__ == '__main__': unittest.main()

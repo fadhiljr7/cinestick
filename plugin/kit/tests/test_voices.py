@@ -25,6 +25,10 @@ class Pure(unittest.TestCase):
         self.assertNotEqual(VV.line_hash(a), VV.line_hash(b)); self.assertEqual(VV.line_hash(a), VV.line_hash(c))
     def test_expand_abbrev(self):
         self.assertEqual(VV.expand_abbrev('Then, Dr. Lee and Mr. Smith met Mrs. Jones on St. Mark'), 'Then, Doctor Lee and Mister Smith met Missus Jones on Saint Mark')
+    def test_check_matches_abbrev_written_in_script(self):
+        self.assertTrue(VV.matches('Then, Dr. Lee tests you.', None, 'Then, Doctor Lee tests you.'))
+        self.assertTrue(VV.matches('Then, Doctor Lee tests you.', None, 'Then, Dr. Lee tests you.'))
+        self.assertFalse(VV.matches('Then, Doctor Lee tests you.', None, 'Then, Lee tests me.'))
     def test_number_asr(self):
         self.assertEqual(VV.number_asr('I have 1000 IQ'), 'I have a thousand IQ')
         self.assertIsNone(VV.number_asr('no digits'))

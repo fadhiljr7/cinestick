@@ -44,7 +44,17 @@ class Assemble(unittest.TestCase):
 
     def test_token_mismatch_keeps_asr(self):
         ws = A.line_words({'text': "Don't-stop now"}, [["Don't", 0, .2], ["stop", .2, .4], ["now", .4, .6]], 0.0, 1.0)
-        self.assertEqual([w['word'] for w in ws], ["Don't", "stop", "now"])
+        self.assertEqual([w['word'] for w in ws], ["Don't-stop", "now"])          # script spelling, one word over Whisper's span
+        self.assertEqual((ws[0]['start'], ws[0]['end']), (0.0, 0.4))
+
+    def test_script_spelling_kept_for_any_mismatch(self):
+        ws = A.line_words({'text': "a thousand-piece puzzle."}, [["a", 0, .1], ["thousand", .1, .4], ["-piece", .4, .6], ["puzzle.", .6, .9]], 0.0, 1.0)
+        self.assertEqual([w['word'] for w in ws], ["a", "thousand-piece", "puzzle."])
+        ws = A.line_words({'text': "sixty steps beyond average"}, [["60", 0, .3], ["steps", .3, .5], ["beyond", .5, .7], ["average", .7, .9]], 0.0, 1.0)
+        self.assertEqual([w['word'] for w in ws], ["sixty", "steps", "beyond", "average"])
+        ws = A.line_words({'text': "up to one hundred sixty."}, [["up", 0, .1], ["to", .1, .2], ["160.", .2, .8]], 0.0, 1.0)
+        self.assertEqual([w['word'] for w in ws], ["up", "to", "one", "hundred", "sixty."])
+        self.assertEqual((ws[2]['start'], ws[4]['end']), (0.2, 0.8))
 
     def test_token_match_uses_script_spelling(self):
         ws = A.line_words({'text': "I have 1000 IQ."}, [["I", 0, .1], ["have", .1, .2], ["a", .2, .3], ["thousand", .3, .5], ["IQ", .5, .7]], 0.0, 1.0)

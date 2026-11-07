@@ -54,6 +54,13 @@ def expand_abbrev(text: str) -> str:
     return text
 
 
+def matches(text: str, asr, got: str) -> bool:
+    """Did Whisper hear the line? Accepts the script, the asr hint or the numbers spelled out; abbreviations expanded on both sides."""
+    sys.path.insert(0, str(HERE)); import asr_check as AC
+    wants = [x for x in (asr, text, number_asr(text)) if x]
+    return any(AC.compare(expand_abbrev(w), expand_abbrev(got), 'en')[0] for w in wants)
+
+
 def line_hash(line: dict) -> str:
     key = json.dumps([line.get('text'), line.get('voice'), line.get('speed', 1.0), line.get('treat', 'normal')])
     return hashlib.sha1(key.encode()).hexdigest()
@@ -89,8 +96,7 @@ def whisper_check(line: dict, wav: Path):
     segs = [s for s in segs if not (s.no_speech_prob > .5 and s.start > tail)]
     got = ' '.join(s.text.strip() for s in segs)
     words = [[w.word.strip(), round(w.start - .6, 3), round(w.end - .6, 3)] for s in segs for w in s.words]
-    wants = [x for x in (line.get('asr'), line['text'], number_asr(line['text'])) if x]
-    ok = any(AC.compare(w, expand_abbrev(got), 'en')[0] for w in wants)
+    ok = matches(line['text'], line.get('asr'), got)
     print(('OK  ' if ok else 'DIFF'), line['id'], '|', line['text'], '→', got)
     return ok, words
 

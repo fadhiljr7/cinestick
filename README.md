@@ -38,10 +38,16 @@ draws every frame, scores it, and hands you an MP4, in **9:16 or 16:9**, **short
 ## Install
 You need **Claude Code**, **Node.js ≥ 18**, **ffmpeg**, and **Python 3.11–3.13**. kokoro-onnx doesn't support Python 3.14 yet; setup finds a compatible Python for you.
 
-| | macOS | Ubuntu/Debian | Windows |
-|---|---|---|---|
-| Node + ffmpeg | `brew install node ffmpeg` | `sudo apt install nodejs npm ffmpeg` | `winget install OpenJS.NodeJS.LTS Gyan.FFmpeg` |
-| Python 3.12 | `brew install python@3.12` | `sudo apt install python3.12 python3.12-venv` | `winget install Python.Python.3.12` |
+| | macOS | Ubuntu/Debian (and Windows via **WSL**) |
+|---|---|---|
+| Node ≥ 18 | `brew install node` | the distro's `nodejs` is too old on 22.04: use [NodeSource](https://github.com/nodesource/distributions) (`curl -fsSL https://deb.nodesource.com/setup_20.x \| sudo -E bash - && sudo apt install -y nodejs`) |
+| ffmpeg | `brew install ffmpeg` | `sudo apt install -y ffmpeg` |
+| Python 3.12 | `brew install python@3.12` | 24.04: `sudo apt install python3.12 python3.12-venv`; 22.04: add the [deadsnakes](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa) PPA first (`sudo add-apt-repository ppa:deadsnakes/ppa`) |
+
+**Windows:** run Claude Code inside **WSL** (Ubuntu) and follow the Linux column; the setup script is POSIX `sh`.
+On Linux, setup installs Chromium with `npx playwright install --with-deps chromium` (the system libraries headless Chromium needs; it asks for sudo).
+
+Cinestick can be installed **side by side** with the aiTrends 2D Studio plugin: its commands are all `/cinestick:*` and its studio folder is `cinestick-studio/`.
 
 Then in Claude Code:
 ```
