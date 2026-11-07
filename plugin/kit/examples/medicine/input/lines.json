@@ -5,7 +5,9 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.08,
-  "text": "I took one tiny pill, and it started a war inside my body."
+  "text": "I took one tiny pill, and it started a war inside my body.",
+  "treat": "normal",
+  "beat": "hook"
  },
  {
   "id": "d02",
@@ -13,7 +15,8 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.08,
-  "text": "But the real enemy wasn't what I expected."
+  "text": "But the real enemy wasn't what I expected.",
+  "treat": "normal"
  },
  {
   "id": "d03",
@@ -21,7 +24,9 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.1,
-  "text": "It started with a sore throat."
+  "text": "It started with a sore throat.",
+  "treat": "normal",
+  "beat": "setup"
  },
  {
   "id": "d04",
@@ -30,7 +35,8 @@
   "voice": "af_heart",
   "speed": 1.0,
   "text": "Ugh. My throat is on fire.",
-  "asr": "Ugg, my throat is on fire."
+  "asr": "Ugg, my throat is on fire.",
+  "treat": "normal"
  },
  {
   "id": "d05",
@@ -38,7 +44,8 @@
   "vo": false,
   "voice": "am_echo",
   "speed": 1.15,
-  "text": "Nice warm throat! Let's move in!"
+  "text": "Nice warm throat! Let's move in!",
+  "treat": "creature"
  },
  {
   "id": "d06",
@@ -46,7 +53,8 @@
   "vo": false,
   "voice": "am_echo",
   "speed": 1.2,
-  "text": "Split! Split! Split!"
+  "text": "Split! Split! Split!",
+  "treat": "creature"
  },
  {
   "id": "d07",
@@ -54,7 +62,8 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.1,
-  "text": "An army of bacteria invaded my body, multiplying rapidly. And every hour, I got weaker."
+  "text": "An army of bacteria invaded my body, multiplying rapidly. And every hour, I got weaker.",
+  "treat": "normal"
  },
  {
   "id": "d08",
@@ -62,7 +71,9 @@
   "vo": false,
   "voice": "am_puck",
   "speed": 1.08,
-  "text": "Wait, how can one tiny pill defeat an entire army of invisible monsters?"
+  "text": "Wait, how can one tiny pill defeat an entire army of invisible monsters?",
+  "treat": "side",
+  "beat": "doubter"
  },
  {
   "id": "d09",
@@ -70,7 +81,8 @@
   "vo": false,
   "voice": "af_heart",
   "speed": 1.0,
-  "text": "Just watch."
+  "text": "Just watch.",
+  "treat": "normal"
  },
  {
   "id": "d10",
@@ -78,7 +90,9 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.1,
-  "text": "I swallowed the antibiotic. Suddenly, millions of bacteria started collapsing."
+  "text": "I swallowed the antibiotic. Suddenly, millions of bacteria started collapsing.",
+  "treat": "normal",
+  "beat": "escalation"
  },
  {
   "id": "d11",
@@ -86,7 +100,8 @@
   "vo": false,
   "voice": "am_echo",
   "speed": 1.15,
-  "text": "My wall! It's cracking!"
+  "text": "My wall! It's cracking!",
+  "treat": "creature"
  },
  {
   "id": "d12",
@@ -94,7 +109,8 @@
   "vo": false,
   "voice": "am_echo",
   "speed": 1.15,
-  "text": "I can't split! Why can't I split?"
+  "text": "I can't split! Why can't I split?",
+  "treat": "creature"
  },
  {
   "id": "d13",
@@ -102,7 +118,8 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.1,
-  "text": "Some lost their protective walls. Others could no longer reproduce. But a few bacteria survived."
+  "text": "Some lost their protective walls. Others could no longer reproduce. But a few bacteria survived.",
+  "treat": "normal"
  },
  {
   "id": "d14",
@@ -110,7 +127,8 @@
   "vo": false,
   "voice": "am_onyx",
   "speed": 0.95,
-  "text": "Is that all you've got?"
+  "text": "Is that all you've got?",
+  "treat": "villain"
  },
  {
   "id": "d15",
@@ -118,7 +136,9 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.0,
-  "text": "Then, something terrifying happens."
+  "text": "Then, something terrifying happens.",
+  "treat": "normal",
+  "beat": "turn"
  },
  {
   "id": "d16",
@@ -126,7 +146,8 @@
   "vo": false,
   "voice": "am_onyx",
   "speed": 0.9,
-  "text": "Boys. Multiply."
+  "text": "Boys. Multiply.",
+  "treat": "villain"
  },
  {
   "id": "d17",
@@ -134,7 +155,8 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.1,
-  "text": "The surviving bacteria began multiplying again. This time, the medicine didn't work against them."
+  "text": "The surviving bacteria began multiplying again. This time, the medicine didn't work against them.",
+  "treat": "normal"
  },
  {
   "id": "d18",
@@ -142,7 +164,8 @@
   "vo": false,
   "voice": "am_puck",
   "speed": 1.08,
-  "text": "Why isn't it working anymore?"
+  "text": "Why isn't it working anymore?",
+  "treat": "side"
  },
  {
   "id": "d19",
@@ -150,7 +173,8 @@
   "vo": false,
   "voice": "af_heart",
   "speed": 1.05,
-  "text": "Because they've become resistant."
+  "text": "Because they've become resistant.",
+  "treat": "normal"
  },
  {
   "id": "d20",
@@ -158,7 +182,9 @@
   "vo": false,
   "voice": "af_heart",
   "speed": 1.08,
-  "text": "You see, antibiotics don't teach your body to fight bacteria. They work by killing bacteria or stopping them from growing."
+  "text": "You see, antibiotics don't teach your body to fight bacteria. They work by killing bacteria or stopping them from growing.",
+  "treat": "normal",
+  "beat": "reveal"
  },
  {
   "id": "d21",
@@ -166,7 +192,8 @@
   "vo": false,
   "voice": "am_puck",
   "speed": 1.08,
-  "text": "So what happens if we use them wrong?"
+  "text": "So what happens if we use them wrong?",
+  "treat": "side"
  },
  {
   "id": "d22",
@@ -174,7 +201,8 @@
   "vo": false,
   "voice": "af_heart",
   "speed": 1.08,
-  "text": "When antibiotics are used incorrectly, resistant bacteria can survive and multiply. Eventually, medicines that once worked may no longer work."
+  "text": "When antibiotics are used incorrectly, resistant bacteria can survive and multiply. Eventually, medicines that once worked may no longer work.",
+  "treat": "normal"
  },
  {
   "id": "d23",
@@ -182,7 +210,9 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.02,
-  "text": "The scariest part? Antibiotics don't become weaker."
+  "text": "The scariest part? Antibiotics don't become weaker.",
+  "treat": "normal",
+  "beat": "closing"
  },
  {
   "id": "d24",
@@ -190,6 +220,7 @@
   "vo": true,
   "voice": "af_heart",
   "speed": 1.0,
-  "text": "The bacteria become harder to kill."
+  "text": "The bacteria become harder to kill.",
+  "treat": "normal"
  }
 ]
