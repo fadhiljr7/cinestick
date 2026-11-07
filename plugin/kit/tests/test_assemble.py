@@ -10,7 +10,9 @@ def tone(path, dur, sr=24000):
 
 class Slug(unittest.TestCase):
     def test_slugify(self): self.assertEqual(A.slugify("What if you had 1000 IQ?"), "what-if-you-had-1000-iq")
-    def test_out_name(self): self.assertEqual(A.out_name("What if you had 1000 IQ?"), "What_if_you_had_1000_IQ.mp4")
+    def test_out_name(self):
+        self.assertEqual(A.out_name("What if you had 1000 IQ?"), "What_if_you_had_1000_IQ.mp4")
+        self.assertEqual(A.out_name("Don't Stop"), "Dont_Stop.mp4")   # same rule as audio/mix.py
 
 class Gaps(unittest.TestCase):
     def test_gaps(self):

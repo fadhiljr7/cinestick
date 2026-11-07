@@ -24,7 +24,8 @@ def slugify(title: str) -> str:
 
 
 def out_name(title: str) -> str:
-    return (re.sub(r'[^A-Za-z0-9]+', '_', title).strip('_') or 'video') + '.mp4'
+    """The final MP4's file name, exactly as audio/mix.py names it."""
+    return (re.sub(r'[^\w\- ]+', '', title or 'video').strip().replace(' ', '_') or 'video') + '.mp4'
 
 
 def gap_before(prev, cur) -> float:
