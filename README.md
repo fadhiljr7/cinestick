@@ -151,7 +151,7 @@ Learned by studying ten reference story shorts frame by frame. The full rulebook
 - **Black 3D shot:** add `--gl swiftshader` to the render command.
 
 ## Credits & licenses
-- **cinestick:** MIT © 2026 fadhiljr7, except the third-party files below.
+- **cinestick:** MIT © 2026 Muhammad Fadhil Abidin (fadhiljr7), except the third-party files below.
 - **aiTrends 2D Studio:** the rendering engine, rig, effects, music/SFX generator and mixer in `plugin/kit/`, plus four adapted reference docs. Not covered by this repo's MIT license; included as-is with small changes and removed on the author's request. See [`plugin/kit/NOTICE`](plugin/kit/NOTICE).
 - **lemo-opuscar** (MIT, © LemoLab): `tools/voice/tts.py` and `asr_check.py`.
 - **Kokoro-82M** (Apache-2.0) via **kokoro-onnx** (MIT); **faster-whisper** (MIT) with OpenAI Whisper models (MIT); **three.js** (MIT); **Playwright** (Apache-2.0); fonts via **@fontsource** (OFL).
