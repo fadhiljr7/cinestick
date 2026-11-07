@@ -1,5 +1,5 @@
 // sets/apartment.js — Maya and Cap's small apartment at dusk. Key light: the big window behind the couch (sunset + city);
-// practical: a floor lamp on the left. Props carry a thin Stickfolk ink outline; the light is aiTrends (glows, pools, dust).
+// practical: a floor lamp on the left. Flat shapes, no outlines; the light does the work (glows, pools, dust).
 // apartment(g, t, cam, { lamp: 0..1, cold: 0..1, night: bool }) -> { GY, CX, M, couch, table, rim, wash }
 import { E, V, mood, layer, backdrop, rr, circle, linGrad, glow, alpha, shade, mix, seg } from '/engine/core.js';
 import * as FX from '/engine/fx2d.js';
