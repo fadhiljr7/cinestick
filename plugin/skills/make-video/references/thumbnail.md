@@ -23,6 +23,11 @@ Every video gets its own thumbnail, **drawn in code** with the same engine, cast
   - **16:9:** avoid the bottom-right corner, where the duration badge sits.
 - **Grade:** the style's grade is applied automatically. Add `veil` vignettes or a light `glow` bloom on the hero if it still looks flat.
 
+## Pitfalls
+- Rings with `fill('evenodd')`: draw both arcs with exactly `Math.PI * 2` (and a `moveTo` between them). `arc(…, 0, 7)` overshoots and cuts a wedge out of the ring.
+- Text touching the hero reads as a mistake: keep a clear gap of ~4 % of the frame height between the text block and the head.
+- `bigFace`'s own rim crescent is one-sided; for a full glowing ring pass `rimColor: 'rgba(0,0,0,0)'` and draw your own ring.
+
 ## Checklist (look at the rendered JPG)
 - [ ] Readable as a 160 px-wide image: the subject and text are still clear.
 - [ ] One clear subject; the accent colour is the brightest thing.
