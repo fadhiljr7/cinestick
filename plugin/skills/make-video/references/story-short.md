@@ -11,7 +11,7 @@ Every Short follows seven beats, whatever the user gives you (a title, a topic, 
 7. **Closing line**: a short flip or callback to the hook.
 
 ## Length and pace
-- 45–75 s of speech, about 190–215 words per minute after the voice tempo (≈ 150–230 words total).
+- **The finished Short must be at least 60 s long** (`tools/plan_check.py` fails below that). Write **60–80 s of speech**: about 190–215 words per minute after the voice tempo, so **≈ 210–280 words** in total. If the voiceover comes out short, add escalation beats or dialogue. Never pad with pauses or slower speech.
 - Short sentences. One idea per line. Split any sentence over ~18 words.
 
 ## Who tells it: narrator mode (choose per story, show it at the checkpoint)
@@ -31,7 +31,7 @@ Every Short follows seven beats, whatever the user gives you (a title, a topic, 
 Show it exactly in this shape, then wait:
 
 ```
-**Format:** 9:16 Short (~60 s)          ← default when the user didn't say; they can change it here
+**Format:** 9:16 Short (~65 s, minimum 60 s)          ← default when the user didn't say; they can change it here
 **Narrator:** offscreen, woman (af_heart) — because "What if you…" speaks to the viewer
 **Cast:** You (yellow cap) · Dr. Lee (lab coat + glasses) · Brain (pink creature, talks)
 

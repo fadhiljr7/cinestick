@@ -1,4 +1,6 @@
-# Writing a long video (minutes, up to ~10)
+# Writing a long video (8 minutes minimum, 10+ recommended)
+
+**Length:** the finished video must be **at least 8 minutes** (`tools/plan_check.py` fails below that). **Aim for 10–12 minutes**: under 10 is allowed but flagged as a note. At 150–190 wpm that is about **1,500–2,200 words** of speech for 10–12 min, and never fewer than ~1,250 for 8 min. Reach the length with more chapters and richer scenes, never with padding.
 
 Long videos do not use the seven beats as a whole. Their shape:
 
@@ -18,7 +20,7 @@ Rules:
 
 ## The checkpoint for a long video
 ```
-**Format:** 16:9 long (~7 min, 6 chapters)
+**Format:** 16:9 long (~11 min, 7 chapters; minimum 8, 10+ recommended)
 **Narrator:** …
 **Cast:** …
 

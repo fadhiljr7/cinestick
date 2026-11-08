@@ -4,14 +4,14 @@ Learned by watching ten reference story shorts frame by frame (cut timing, moves
 `tools/plan_check.py` enforces the numbers; the rest is your job while writing `shots.json` and the scene code.
 
 ## Rhythm
-**Shorts (9:16 or 16:9, under ~90 s)**
+**Shorts (9:16 or 16:9, at least 60 s, about 60–90 s)**
 - A new shot every **~1–2 s**: median target **1.5 s**, `plan_check` fails above **2.0 s**. No shot over **3.5 s** except the last (closing hold).
 - Cut on the **stressed word**, not the sentence end. Start the shot 0.1–0.2 s before that word (`wordAt()` / timeline/words.json).
 - Default transition: **cross-dissolve of 4–6 frames** → `"in": {"type": "fade", "dur": 0.2}`. At most 40 % hard cuts, and only for impacts, snaps and jump-scares.
 - `flash` (white) or `whip` **only** on the turn ("Then…", "Until…") and on big realisations. `dip` (to black) only for a real time jump.
 - 1–2 freeze-frames per Short, never more.
 
-**Long videos (minutes)**
+**Long videos (at least 8 min, 10+ recommended)**
 - Median **2–4 s**, nothing over 10 s. Every chapter opens with an **establishing** shot entered with `dip`. Inside a chapter the Short rules apply, just slower.
 
 ## Camera

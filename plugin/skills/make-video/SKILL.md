@@ -45,7 +45,7 @@ Follow `references/install.md`: copy `<plugin root>/kit` to `./cinestick-studio/
   - every shot has `type`, `scene`, `set`, `in` (default `{"type":"fade","dur":0.2}`), `sfx`, `amb`;
   - `duration` = the voice length + 1.5 s;
   - the `music` plan, with `"cut": true` before the reveal.
-- Run `$PY tools/plan_check.py --project projects/<slug>` and fix the plan until it prints `clean`.
+- Run `$PY tools/plan_check.py --project projects/<slug>` and fix the plan until it prints `clean`. It also enforces the minimum length: **Shorts ≥ 60 s; long videos ≥ 8 min (10+ recommended, shown as a NOTE)**. If the voiceover is too short, go back to step 2 and add story (beats, dialogue, chapters), never pauses.
 
 ## 5. Scenes (batches of 8–12 shots)
 - Write `scenes/cast.js` (outfits, story props; import the helpers from `./lib/`), `scenes/sets/<place>.js` and `scenes/shots/NN_<name>.js` with `registerShot`.

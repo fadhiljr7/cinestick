@@ -32,7 +32,7 @@ draws every frame, scores it, and hands you an MP4, in **9:16 or 16:9**, **short
   - faces that change mid-line;
   - literal gags;
   - a callback ending.
-- **Formats:** Shorts (~45–75 s, seven story beats) and long videos (up to ~10 min, chapters), at 720p–4K.
+- **Formats:** Shorts (**at least 60 s**, seven story beats) and long videos (**at least 8 min, 10+ min recommended**, chapters), at 720p–4K.
 - **Costs:** no paid APIs, no image/video AI, no stock footage. Voices run offline (Kokoro). Everything is drawn by HTML canvas + Three.js and rendered by headless Chromium + ffmpeg.
 
 ## Install
@@ -149,6 +149,7 @@ You get `out/<Title>.youtube.md` with five sections (title, description, tags, t
 
 ## Directing rules
 Learned by studying ten reference story shorts frame by frame. The full rulebook is in `plugin/skills/make-video/references/directing.md`, and `tools/plan_check.py` enforces the numbers.
+- **Length:** Shorts are at least 60 s; long videos are at least 8 min, with 10+ min recommended. The shot check enforces it, and the story step writes enough material to reach it.
 - **Shorts:** median shot ≤ 2 s (target 1.5 s), none over 3.5 s except the closing hold. Cut on the stressed word, with a cross-dissolve by default. Flash or whip only on the turn. At most 2 freeze-frames. The last shot is a **callback** to an earlier framing, changed.
 - **Long videos:** a 2–4 s median, and each chapter opens with an establishing shot after a dip to black.
 - **Camera:** one move per shot: push-in on the speaker, pan following action, dolly past a prop, pull-back reveal, dutch tilt for unease, top-down for tables and maps.
